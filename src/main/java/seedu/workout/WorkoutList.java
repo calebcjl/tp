@@ -50,7 +50,7 @@ public class WorkoutList {
 
     public String deleteWorkout(Date date) {
         for (Workout workout : workoutArrayList) {
-            if (workout.getDate().equals(date)) {
+            if (workout.getDate() == date) {
                 workoutArrayList.remove(workout);
                 return "Workout deleted";
             }

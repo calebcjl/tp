@@ -26,9 +26,9 @@ public class WorkoutListTest {
         calendar2.set(2023, Calendar.JANUARY, 02); // Monday
         workoutList.addWorkout(new Workout(calendar2.getTime()));
 
-        // Get the workouts for the week of January 3, 2023, using any day in the week
+        // Get the workouts for the week of January 01, 2023 using any day in the week
         Calendar calendar3 = Calendar.getInstance();
-        calendar3.set(2023, Calendar.JANUARY, 3); // Wednesday
+        calendar3.set(2023, Calendar.JANUARY, 03); // Tuesday
         WorkoutList workoutsInSpecificWeek = workoutList.getWorkoutsInSpecificWeek(calendar3.getTime());
 
         // Check that the correct workouts are returned
